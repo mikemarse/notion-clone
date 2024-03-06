@@ -170,13 +170,14 @@ const HeroSection = () => {
 					{tabs.map((tab) => (
 						<motion.div
 							key={tab.name}
-							className={`xl:flex justify-center space-x-4 xl:pt-4 sm:my-10 xl:py-0 w-60 h-40 ${activeTab === tab
+							className={`xl:flex justify-center space-x-4 xl:pt-4 sm:my-10 xl:py-0 w-60 h-40 min-w-40 ${activeTab === tab
 									? "border rounded-xl pt-2 bg-white"
 									: "shadow-md rounded-xl pt-2 bg-[#f6f5f4]"
 								}`}
 							onMouseEnter={() => setActiveTab(tab)}
 						>
-							<div className="px-2">
+								{/* I changed this one to have h-full to try to fix the learn more not being aligned properly on all the boxes*/}
+							<div className="px-2 h-full">
 								<div className="flex items-center">
 									<div>{tab.icon}</div>
 									<div className="text-2xl font-medium">{tab.name}</div>
@@ -185,8 +186,8 @@ const HeroSection = () => {
 								<motion.div className="flex flex-col text-sm" initial={{ y: 0 }} animate={{ y: activeTab === tab ? 10 : 25 }}
 									transition={{ duration: 0.2 }}
 								>*/}
-								<div className="flex flex-col text-sm mt-2"> {/* New div, take this out if it doesn't work*/}
-									<div>
+								<div className="flex flex-col text-sm mt-2"> {/*I added items-start to try to get the learn more to line up*/}
+									<div className="h-[70px]">
 										<motion.div
 											initial={{ opacity: 0 }}
 											animate={{ opacity: 1 }}
@@ -208,8 +209,7 @@ const HeroSection = () => {
 					))}
 				</div>
 			)}
-			{/*Need to figure out the animation so that I can adjust the big ass picture to be smaller. Can't do that since animation fucks up if i make it smaller*/}
-			<div className="hidden md:flex py-2 px-8 md:px-0 lg:w-3/4 xl:w-[65%] 2xl:w-[65%]">
+			<div className="hidden md:flex py-1 px-8 md:px-0 lg:w-3/4 xl:w-[65%] 2xl:w-[65%]">
 				{activeTab && (
 					<div className="md:flex items-center justify-center space-x-6 hover:cursor-pointer w-full">
 						<Image src={activeTab.image} alt="Hero" width={500} height={500} className="xl:w-[1022px] xl:h-[638px] lg:w-4/5 p-10 xl:p-20 border rounded-xl shadow-md"/>	
