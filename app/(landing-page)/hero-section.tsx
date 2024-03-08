@@ -166,7 +166,7 @@ const HeroSection = () => {
 					</div>
 				</div>
 			) : (
-				<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[1022px] 2xl:w-[70%]">
+				<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[990px] 2xl:w-[70%]">
 					{tabs.map((tab) => (
 						<motion.div
 							key={tab.name}

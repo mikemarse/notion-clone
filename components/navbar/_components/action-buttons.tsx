@@ -22,7 +22,7 @@ const ActionButtons = () => {
 		<div className="pr-2">
 			<div className="flex items-center justify-center">
 																														{/*Or I could use divide-slate-300 looks pretty similar idc*/}
-				<div className="flex xl:space-x-2 divide-x-[1px] h-[20px] divide-gray-300">
+				<div className="xl:space-x-2 hidden lg:flex divide-x-[1px] h-[20px] divide-gray-300">
 					<Link href={'/contact-sales'} className="hidden lg:flex items-center">
 						<Button className="hidden lg:flex items-center border-none text-md" variant={'outline'}>Request a demo</Button>
 					</Link>
