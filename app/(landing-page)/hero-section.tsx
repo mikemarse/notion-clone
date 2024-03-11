@@ -136,7 +136,7 @@ const HeroSection = () => {
 							<motion.div
 								key={tab.name}
 								className={`flex p-1 md:p-8 cursor-pointer ${activeTab.name === tab.name
-										? "rounded-md md:rounded-xl bg-[#f6f5f4] md:bg-white border-gray-200 md:border items-center justify-center flex p-1"
+										? "rounded-md md:rounded-xl bg-[#EAE7E7] md:bg-white border-gray-200 md:border items-center justify-center flex p-1"
 										: "md-bg[#f6f5f4] rounded-md xl:rounded-xl p-1 items-center justify-center hover:bg-[#eae7e7]"
 									}`}
 								onClick={() => setActiveTab(tab)}
@@ -176,16 +176,11 @@ const HeroSection = () => {
 								}`}
 							onMouseEnter={() => setActiveTab(tab)}
 						>
-								{/* I changed this one to have h-full to try to fix the learn more not being aligned properly on all the boxes*/}
 							<div className="px-2 h-full">
 								<div className="flex items-center">
 									<div>{tab.icon}</div>
 									<div className="text-2xl font-medium">{tab.name}</div>
 								</div>
-								{/* HAD TO COMMENT THIS OUT. 
-								<motion.div className="flex flex-col text-sm" initial={{ y: 0 }} animate={{ y: activeTab === tab ? 10 : 25 }}
-									transition={{ duration: 0.2 }}
-								>*/}
 								<div className="flex flex-col text-sm mt-2"> {/*I added items-start to try to get the learn more to line up*/}
 									<div className="h-[70px]">
 										<motion.div
@@ -209,10 +204,10 @@ const HeroSection = () => {
 					))}
 				</div>
 			)}
-			<div className="hidden md:flex py-1 px-8 md:px-0 md:w-3/4 xl:w-[990px%] 2xl:w-[70%]">
+			<div className="hidden md:flex py-1 px-8 md:px-0 md:w-3/4 xl:w-[990px] 2xl:w-[70%]">
 				{activeTab && (
 					<div className="md:flex items-center justify-center space-x-6 hover:cursor-pointer w-full">
-						<Image src={activeTab.image} alt="Hero" width={500} height={500} className="xl:w-[1022px] xl:h-[638px] lg:w-4/5 p-10 xl:p-20 border rounded-xl shadow-md"/>	
+						<Image src={activeTab.image} alt="Hero" width={500} height={500} className="xl:w-[990px] xl:h-[638px] lg:w-4/5 p-10 xl:p-20 border rounded-xl shadow-md"/>	
 					</div>
 				)}
 			</div>
