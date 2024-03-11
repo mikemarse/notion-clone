@@ -104,7 +104,7 @@ const FourthSection = () => {
 				</div>
 
 				<div className={cn("flex items-center justify-center text-xl xl:text-2xl pt-10 xl:py-4 px-8 text-center w-4/5 break-words max-w-[680px]", font.className)}>
-					&quot;IpsumLab adapts to your meeds. It's as minimal or as powerful as you need it to be.&quot;
+					&quot;IpsumLab adapts to your meeds. It&apos;s as minimal or as powerful as you need it to be.&quot;
 				</div>
 				<div className="flex space-x-4 items-center justify-center pl-10">
 					<Image src={"/logos/logoipsum-253.svg"} alt={"logo"} width={200} height={200} className="w-24" />
