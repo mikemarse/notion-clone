@@ -35,7 +35,7 @@ const ActionButtons = () => {
 						<Button className="hidden lg:flex items-center border-none text-md" variant={'outline'}>Log in</Button>
 					</div>
 					<div>
-						<Button className="hidden lg:block">Get Notion free</Button>
+						<Button className="hidden lg:block">Get IpsumLab free</Button>
 					</div>
 				</div>
 			</div>

@@ -23,7 +23,7 @@ const tabs = [
 			<PiSparkleLight className="text-3xl mr-2 text-purple-600 bg-purple-100 p-1 rounded-full fill-purple-600" />
 		),
 		name: "AI",
-		description: "Ask literally anything. Notion will answer.",
+		description: "Ask literally anything. IpsumLab will answer.",
 		more: (
 			<div className="text-purple-600 flex items-center">
 				Learn more <PiArrowRight className="text-sm ml-1" />
@@ -96,13 +96,13 @@ const HeroSection = () => {
 				Write, plan, share. <br /> With AI at your side.
 			</div>
 			<p className="font-medium text-2xl pt-4 text-center w-2/3 mx-auto">
-				Notion is the connected workspace where better, faster work happens.
+				IpsumLab is the connected workspace where better, faster work happens.
 			</p>
 			<div className="flex gap-4 pt-6 items-center justify-center">
 				<Link href="/">
 					<Button className="py-1">
 						<div className="flex items-center justify-center">
-							<div className="text-lg">Get Notion free</div>
+							<div className="text-lg">Get IpsumLab free</div>
 							<div className="ml-2">
 								<PiArrowRightBold />
 							</div>
@@ -209,7 +209,7 @@ const HeroSection = () => {
 					))}
 				</div>
 			)}
-			<div className="hidden md:flex py-1 px-8 md:px-0 lg:w-3/4 xl:w-[65%] 2xl:w-[65%]">
+			<div className="hidden md:flex py-1 px-8 md:px-0 md:w-3/4 xl:w-[990px%] 2xl:w-[70%]">
 				{activeTab && (
 					<div className="md:flex items-center justify-center space-x-6 hover:cursor-pointer w-full">
 						<Image src={activeTab.image} alt="Hero" width={500} height={500} className="xl:w-[1022px] xl:h-[638px] lg:w-4/5 p-10 xl:p-20 border rounded-xl shadow-md"/>	

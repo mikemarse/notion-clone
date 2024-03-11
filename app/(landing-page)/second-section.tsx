@@ -18,7 +18,7 @@ const logos = [
 
 const SecondSection = () => {
 	return (<div className="pt-16 flex items-center justify-center flex-col">
-		<div className="text-4xl w-3/4 text-center xl:text-5xl font-medium ">Millions run on Notion every day</div>
+		<div className="text-4xl w-3/4 text-center xl:text-5xl font-medium ">Millions run on IpsumLab every day</div>
 		<div className="py-4 xl:1/4 px-8 text-center">Powering the world&apos;s best teams, from next-generation startups <br /> to established enterprises</div>
 		<div className="text-blue-400 flex items-cetner hover:cursor-pointer hover:underline text-center">Read customer stories <PiArrowRight className="ml-2 mt-1"/></div>
 		<div className="grid grid-cols-3 xl:grid-cols-4 items-center justify-center px-10 md:px-20 lg:px-0 lg:w-1/3 pt-10 gap-10 text-center mx-auto">

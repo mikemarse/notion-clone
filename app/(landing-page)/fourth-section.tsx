@@ -17,7 +17,7 @@ const font = Lora({
 
 const tabs = [
   {
-    icon: <TbSwitch3 className="text3xl mr-2 text-sky-600" />,
+    icon: <TbSwitch3 className="text-3xl mr-2 text-sky-600" />,
     header: "Vizualize, filter & sort any way you want",
     subheading:
       "Show only tasks assigned to you, or items marked as urgent. Break down any project in the way that's most helpful to you.",
@@ -41,7 +41,7 @@ const tabs = [
     icon: <PiPaletteLight className="text-3xl mr-2 text-sky-600" />,
     header: "Build any page, communicate any idea",
     subheading:
-      "Everything is drag and drop in Notion - images, toggles, to-do's, even embedded databases.",
+      "Everything is drag and drop in IpsumLab - images, toggles, to-do's, even embedded databases.",
     image: "/assets/svg/PettingDoodle.svg",
   },
 ];
@@ -65,7 +65,8 @@ const FourthSection = () => {
         <div className="text-3xl xl:text-5xl font-medium justify-center items-center flex">
           Powerful building blocks
         </div>
-        <div className="grid xl:grid-cols-4 md:grid-cols-2 md:row-span-1 gap-4 xl:gap-6 mt-8 px-8 md:px-16 xl:px-0 xl:w-3/4 2xl:w-[55%] mx-auto md:w-full">
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 md:row-span-1 gap-4 xl:gap-6 mt-8 px-8 md:px-16 xl:px-0 xl:w-[990px] 2xl:w-[70%] mx-auto md:w-full">
+				{/*<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[990px] 2xl:w-[70%]"> */}
           {tabs.map((tab, index) => (
             <div
               key={tab.header}
@@ -79,9 +80,9 @@ const FourthSection = () => {
 								{index === 0 && tab.images && (
 									<div className="">
 										<Image src={tab.images[activeImageIdx].picture} alt="image" width={500} height={500} className="flex justify-center my-10 xl:my-16 rounded-xl mx-auto"/>
-										<div className="grid grid-cols-5 xl:grid-cols-6 xl:w-1/2 mx-auto gap-1 xl:space-x-2">
+										<div className="grid grid-cols-5 md:grid-cols-6 xl:w-1/2 mx-auto gap-1 xl:space-x-2">
 											{tab.images.map((image, index) => (
-												<div key={image.title} onClick={() => setActiveImageIdx(index)} className={`hover:bg-[#dbd9d9] ${index === activeImageIdx ? "rounded-md bg-[#dbd9d9] items-center justify-center flex p-1" : "rounded-md p-1 items-center justify-center bg-[#f6f5f4] hover:bg[#eae7e7]"}`}>
+												<div key={image.title} onClick={() => setActiveImageIdx(index)} className={`hover:bg-[#dbd9d9] ${index === 5 ? "col-start-3  md:col-start-6" : ""} ${index === activeImageIdx ? "rounded-md bg-[#dbd9d9] items-center justify-center flex p-1" : "rounded-md p-1 items-center justify-center bg-[#f6f5f4] hover:bg[#eae7e7]"}`}>
 													<div className="text-sm items-center justify-center flex hover:cursor-pointer">
 														{image.title}
 													</div>
@@ -103,7 +104,7 @@ const FourthSection = () => {
 				</div>
 
 				<div className={cn("flex items-center justify-center text-xl xl:text-2xl pt-10 xl:py-4 px-8 text-center w-4/5 break-words max-w-[680px]", font.className)}>
-					&quot;Notion adapts to your meeds. It's as minimal or as powerful as you need it to be.&quot;
+					&quot;IpsumLab adapts to your meeds. It's as minimal or as powerful as you need it to be.&quot;
 				</div>
 				<div className="flex space-x-4 items-center justify-center pl-10">
 					<Image src={"/logos/logoipsum-253.svg"} alt={"logo"} width={200} height={200} className="w-24" />
