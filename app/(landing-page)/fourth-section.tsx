@@ -1,15 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { TbSwitch3 } from "react-icons/tb";
 import { PiEyeLight, PiPaletteLight } from "react-icons/pi";
 import { Lora } from "next/font/google";
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import { useMediaQuery } from "react-responsive";
 const font = Lora({
   subsets: ["latin"],
   weight: ["400"],
@@ -18,9 +14,9 @@ const font = Lora({
 const tabs = [
   {
     icon: <TbSwitch3 className="text-3xl mr-2 text-sky-600" />,
-    header: "Vizualize, filter & sort any way you want",
+    header: `Vizualize, filter & sort any way you want`,
     subheading:
-      "Show only tasks assigned to you, or items marked as urgent. Break down any project in the way that's most helpful to you.",
+      `Show only tasks assigned to you, or items marked as urgent. Break down any project in the way that's most helpful to you.`,
     images: [
       { title: "Board", picture: "/assets/svg/FloatDoodle.svg" },
       { title: "Table", picture: "/assets/svg/GroovySittingDoodle.svg" },
@@ -41,7 +37,7 @@ const tabs = [
     icon: <PiPaletteLight className="text-3xl mr-2 text-sky-600" />,
     header: "Build any page, communicate any idea",
     subheading:
-      "Everything is drag and drop in IpsumLab - images, toggles, to-do's, even embedded databases.",
+      `Everything is drag and drop in IpsumLab - images, toggles, to-do's, even embedded databases.`,
     image: "/assets/svg/PettingDoodle.svg",
   },
 ];
