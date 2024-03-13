@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { PiArrowRight } from "react-icons/pi";
 
@@ -28,6 +29,28 @@ const SecondSection = () => {
 				</div>
 			))}
 		</div>
+				<div className="flex flex-col justify-center items-center mt-24 mb-32">
+					<div className="font-medium text-xl lg:text-2xl">
+						See what IpsumLab can do for your business
+					</div>
+					<div className="flex pt-4 space-x-4">
+						<div>
+							<Button className="py-1">
+								<div className="flex items-center justify-center">
+									<div className="text-lg">Get IpsumLab free</div>
+								</div>
+							</Button>
+						</div>
+						<div className="text-lg flex items-center justify-center text-center text-blue-500 hover:text-blue-400 hover:underline cursor-pointer">
+							<div className="flex items-center justify-center text-center">
+								Request a demo
+							</div>
+							<div>
+								<PiArrowRight className="ml-1" />
+							</div>
+						</div>
+					</div>
+				</div>
 	</div>)
 }
 

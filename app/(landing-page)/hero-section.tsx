@@ -166,7 +166,8 @@ const HeroSection = () => {
 					</div>
 				</div>
 			) : (
-				<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[990px] 2xl:w-[70%]">
+				<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[990px] 2xl:w-[70%] overflow-x-scroll">
+						{/* Maybe I can do an overflow-x-auto thing kind of like the notion website does when it gets too small HEADS UP, I ADDED IT ABOVE*/}
 					{tabs.map((tab) => (
 						<motion.div
 							key={tab.name}
@@ -204,10 +205,10 @@ const HeroSection = () => {
 					))}
 				</div>
 			)}
-			<div className="hidden md:flex py-1 px-8 md:px-0 md:w-3/4 xl:w-[990px] 2xl:w-[70%]">
+			<div className="hidden md:flex justify-center items-center py-1 px-8 md:px-4 md:w-4/5 xl:w-[990px] 2xl:w-[70%] border rounded-xl shadow-md">
 				{activeTab && (
-					<div className="md:flex items-center justify-center space-x-6 hover:cursor-pointer w-full">
-						<Image src={activeTab.image} alt="Hero" width={500} height={500} className="xl:w-[990px] xl:h-[638px] lg:w-4/5 p-10 xl:p-20 border rounded-xl shadow-md"/>	
+					<div className="flex items-center justify-center space-x-6">
+						<Image src={activeTab.image} alt="Hero" width={500} height={500} className="p-10 xl:p-20"/>	
 					</div>
 				)}
 			</div>

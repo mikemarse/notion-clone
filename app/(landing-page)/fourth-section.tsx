@@ -3,9 +3,11 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { TbSwitch3 } from "react-icons/tb";
-import { PiEyeLight, PiPaletteLight } from "react-icons/pi";
+import { PiArrowRight, PiEyeLight, PiPaletteLight } from "react-icons/pi";
 import { Lora } from "next/font/google";
 import { useRef, useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 const font = Lora({
   subsets: ["latin"],
   weight: ["400"],
@@ -98,15 +100,36 @@ const FourthSection = () => {
 						</div>
 					))}
 				</div>
-
-				<div className={cn("flex items-center justify-center text-xl xl:text-2xl pt-10 xl:py-4 px-8 text-center w-4/5 break-words max-w-[680px]", font.className)}>
+				<div className={cn("flex items-center justify-center text-xl xl:text-2xl pt-8 px-8 text-center w-4/5 break-words max-w-[680px]", font.className)}>
 					&quot;IpsumLab adapts to your needs. It&apos;s as minimal or as powerful as you need it to be.&quot;
 				</div>
-				<div className="flex space-x-4 items-center justify-center pl-10">
+				<div className="flex space-x-4 items-center justify-center pl-10 mt-2">
 					<Image src={"/logos/logoipsum-253.svg"} alt={"logo"} width={200} height={200} className="w-24" />
 					<div className="items-center justify-center">
 						<div className="font-medium">Danny Johnson</div>
 						<div>Director of Ops & Marketing, IpsumLab</div>
+					</div>
+				</div>
+				<div className="flex flex-col justify-center items-center mt-20 mb-32">
+					<div className="font-medium text-xl lg:text-2xl">
+						Make IpsumLab the tool you&apos;ve been looking for
+					</div>
+					<div className="flex pt-4 space-x-4">
+						<div>
+							<Button className="py-1">
+								<div className="flex items-center justify-center">
+									<div className="text-lg">Get IpsumLab free</div>
+								</div>
+							</Button>
+						</div>
+						<div className="text-lg flex items-center justify-center text-center text-blue-500 hover:text-blue-400 hover:underline cursor-pointer">
+							<div className="flex items-center justify-center text-center">
+								Request a demo
+							</div>
+							<div>
+								<PiArrowRight className="ml-1" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
