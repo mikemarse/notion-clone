@@ -5,6 +5,7 @@ import ThirdSection from "./third-section";
 import FourthSection from "./fourth-section";
 import FifthSection from "./fifth-section";
 import SixthSection from "./sixth-section";
+import SeventhSection from "./seventh-section";
 
 const LandingPage = () => {
 	return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
 			<FourthSection />
 			<FifthSection />
 			<SixthSection />
+			<SeventhSection />
 		</div>
 	);
 }

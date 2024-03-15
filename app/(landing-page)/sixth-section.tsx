@@ -33,7 +33,7 @@ const tabDesc = [
 ]
 
 const SixthSection = () => {
-  return <div className="mt-20 xl:mt-20 flex flex-col justify-center items-center">
+  return <div className="mt-20 flex flex-col justify-center items-center">
 		<div className="text-3xl w-3/4 xl:text-5xl font-medium xl:w-1/2 text-center">
 			Join a global movement.<br />Unlease your creativity.		
 		</div>
