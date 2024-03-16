@@ -53,7 +53,6 @@ type Tab = {
 };
 
 const FourthSection = () => {
-  const ref = useRef(null);
   const [activeTab, setActiveTab] = useState<Tab>(tabs[2]);
   const [activeImageIdx, setActiveImageIdx] = useState(0);
 

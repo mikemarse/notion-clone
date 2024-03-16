@@ -6,6 +6,8 @@ import FourthSection from "./fourth-section";
 import FifthSection from "./fifth-section";
 import SixthSection from "./sixth-section";
 import SeventhSection from "./seventh-section";
+import EighthSection from "./eighth-section";
+import Footer from "@/components/footer";
 
 const LandingPage = () => {
 	return (
@@ -18,6 +20,8 @@ const LandingPage = () => {
 			<FifthSection />
 			<SixthSection />
 			<SeventhSection />
+			<EighthSection />
+			<Footer />
 		</div>
 	);
 }
