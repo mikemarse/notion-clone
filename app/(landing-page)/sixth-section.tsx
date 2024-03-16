@@ -37,8 +37,8 @@ const SixthSection = () => {
 		<div className="text-3xl w-3/4 xl:text-5xl font-medium xl:w-1/2 text-center">
 			Join a global movement.<br />Unlease your creativity.		
 		</div>
-		<div className="text-center mt-3">
-			Our vibrant community produces content, teaches courses, and leads events all over <br /> the world.
+		<div className="text-center mt-3 max-w-[600px] px-20 md:px-0">
+			Our vibrant community produces content, teaches courses, and leads events all over the world.
 		</div>
 		<div className="flex items-center justify-center text-sky-600 cursor-pointer hover:underline text-lg mt-4">
 			Learn more <PiArrowRight className="ml-2" />
@@ -106,7 +106,7 @@ const SixthSection = () => {
 						</div>
 					</div>
 					<div className="text-[#121212]">
-						I used to HATE documenting things. And then I started using <span className="text-[#1B95E0]">@IpsumLab</span> and I document a lot. A LOT A LOT. Now I just realize that it wasn't that I hated documenting, I just hated Google Docs.
+						I used to HATE documenting things. And then I started using <span className="text-[#1B95E0]">@IpsumLab</span> and I document a lot. A LOT A LOT. Now I just realize that it wasn&apos;t that I hated documenting, I just hated Google Docs.
 					</div>
 				</div>
 			</div>

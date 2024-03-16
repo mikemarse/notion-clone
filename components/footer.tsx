@@ -41,7 +41,7 @@ const Footer = () => {
 					<li><span className="text-[#00000099] hover:underline cursor-pointer hover:text-blue-500">Wikis</span></li>
 					<li><span className="text-[#00000099] hover:underline cursor-pointer hover:text-blue-500">Projects</span></li>
 					<li><span className="text-[#00000099] hover:underline cursor-pointer hover:text-blue-500">Calendar</span></li>
-					<li><span className="text-[#00000099] hover:underline cursor-pointer hover:text-blue-500">What's new</span></li>
+					<li><span className="text-[#00000099] hover:underline cursor-pointer hover:text-blue-500">What&apos;s new</span></li>
 				</ul>
 				<ul className="space-y-2 mb-8">
 					<li className="cursor-default">Download</li>
