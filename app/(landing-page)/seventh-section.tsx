@@ -61,7 +61,7 @@ const SeventhSection = () => {
 						</div>
 					</div>
 					<div className="flex items-center justify-center">
-						<Image src={"/assets/svg/IcecreamDoodle.svg"} alt="Dog" width={500} height={500} className="mt-6" />
+						<Image src={"/assets/svg/IceCreamDoodle.svg"} alt="Dog" width={500} height={500} className="mt-6" />
 					</div>
 				</div>
 			</div>		
