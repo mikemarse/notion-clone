@@ -182,7 +182,7 @@ const HeroSection = () => {
 									<div>{tab.icon}</div>
 									<div className="text-2xl font-medium">{tab.name}</div>
 								</div>
-								<div className="flex flex-col text-sm mt-2"> {/*I added items-start to try to get the learn more to line up*/}
+								<div className="flex flex-col text-sm mt-2">
 									<div className="h-[70px]">
 										<motion.div
 											initial={{ opacity: 0 }}
@@ -205,7 +205,7 @@ const HeroSection = () => {
 					))}
 				</div>
 			)}
-			<div className="hidden md:flex justify-center items-center py-1 px-8 md:px-4 md:w-4/5 xl:w-[990px] 2xl:w-[70%] border rounded-xl shadow-md">
+			<div className="hidden md:flex justify-center items-center py-1 px-8 md:px-4 md:w-4/5 xl:w-[990px] md:h-[620px] 2xl:w-[70%] border rounded-xl shadow-md">
 				{activeTab && (
 					<div className="flex items-center justify-center space-x-6">
 						<Image src={activeTab.image} alt="Hero" width={500} height={500} className="p-10 xl:p-20"/>	

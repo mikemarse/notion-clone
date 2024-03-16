@@ -62,7 +62,7 @@ const FourthSection = () => {
         <div className="text-3xl xl:text-5xl font-medium justify-center items-center flex">
           Powerful building blocks
         </div>
-        <div className="grid xl:grid-cols-4 md:grid-cols-2 md:row-span-1 gap-4 xl:gap-6 mt-8 px-8 md:px-16 xl:px-0 xl:w-[990px] 2xl:w-[70%] mx-auto md:w-full">
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 md:row-span-1 gap-4 xl:gap-6 mt-8 xl:w-[990px] 2xl:w-[70%] mx-auto w-4/5">
 				{/*<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[990px] 2xl:w-[70%]"> */}
           {tabs.map((tab, index) => (
             <div
@@ -107,28 +107,6 @@ const FourthSection = () => {
 					<div className="items-center justify-center">
 						<div className="font-medium">Danny Johnson</div>
 						<div>Director of Ops & Marketing, IpsumLab</div>
-					</div>
-				</div>
-				<div className="flex flex-col justify-center items-center mt-20 mb-32">
-					<div className="font-medium text-xl lg:text-2xl">
-						Make IpsumLab the tool you&apos;ve been looking for
-					</div>
-					<div className="flex pt-4 space-x-4">
-						<div>
-							<Button className="py-1">
-								<div className="flex items-center justify-center">
-									<div className="text-lg">Get IpsumLab free</div>
-								</div>
-							</Button>
-						</div>
-						<div className="text-lg flex items-center justify-center text-center text-blue-500 hover:text-blue-400 hover:underline cursor-pointer">
-							<div className="flex items-center justify-center text-center">
-								Request a demo
-							</div>
-							<div>
-								<PiArrowRight className="ml-1" />
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

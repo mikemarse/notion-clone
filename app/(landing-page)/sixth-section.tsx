@@ -43,7 +43,7 @@ const SixthSection = () => {
 		<div className="flex items-center justify-center text-sky-600 cursor-pointer hover:underline text-lg mt-4">
 			Learn more <PiArrowRight className="ml-2" />
 		</div>
-		<div className="grid grid-cols-12 grid-row-6 md:row-span-2 gap-4 xl:gap-6 mt-8 px-8 md:px-16 xl:px-0 xl:w-[990px] 2xl:w-[70%] mx-auto md:w-full">
+		<div className="grid grid-cols-12 grid-row-6 md:row-span-2 gap-4 xl:gap-6 mt-8 xl:w-[990px] 2xl:w-[70%] mx-auto w-4/5">
 			<div className="col-span-12 md:col-span-4 bg-[#f6f5f4] flex flex-col justify-center items-start p-8 rounded-xl">
 				<div className="text-[#0A85D1] text-6xl">1M+</div>
 				<div>community members</div>

@@ -50,7 +50,7 @@ const SeventhSection = () => {
 		<div className="flex items-center justify-center text-sky-600 cursor-pointer hover:underline text-lg mt-4">
 			Browse all templates <PiArrowRight className="ml-1" />
 		</div>
-		<div className="grid grid-cols-12 grid-row-3 md:row-span-2 gap-4 xl:gap-6 mt-8 px-8 md:px-16 xl:px-0 xl:w-[990px] 2xl:w-[70%] mx-auto w-full ">
+		<div className="grid grid-cols-12 grid-row-3 md:row-span-2 gap-4 xl:gap-6 mt-8 xl:w-[990px] 2xl:w-[70%] mx-auto w-4/5">
 			<div className="bg-[#f6f5f4] flex flex-col col-span-12 lg:col-span-6 row-span-3 rounded-xl shadow-md cursor-pointer hover:bg-[#EAE7E7]">
 				<div className="py-6 px-8 flex flex-col">
 					<div className="space-y-8 mb-4">
