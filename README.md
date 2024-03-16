@@ -4,7 +4,7 @@
 
 <h1>Demo</h1>
 
-<p>Click [here](https://notion-clone-ashen-one.vercel.app) to see the demo</p>
+Click [here](https://notion-clone-ashen-one.vercel.app) to see the demo
 
 <h1>Description</h1>
 <p>
