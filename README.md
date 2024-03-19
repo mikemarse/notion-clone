@@ -19,7 +19,8 @@ Click [here](https://notion-clone-ashen-one.vercel.app) to see the demo
 - **Shadcn UI**: A UI component library for React, providing pre-styled components for rapid development.
 - **Framer Motion**: A library for creating animations and gestures in React applications with a simple and intuitive API.
 
-<h1>Features</h1>
-<p>Responsive design for various screen sizes.</p>
-<p>Interactive elements such as hover effects and button animations</p>
-<p>Optimized performance for fast loading times.</p>
+## Features
+
+- Responsive design for various screen sizes.
+- Interactive elements such as hover effects and button animations
+- Optimized performance for fast loading times.
