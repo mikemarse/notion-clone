@@ -166,7 +166,7 @@ const HeroSection = () => {
 					</div>
 				</div>
 			) : (
-				<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[990px] 2xl:w-[70%] overflow-x-scroll">
+				<div className="flex xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-[990px] 2xl:w-[70%] overflow-x-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style-none] [scrollbar-width:none]">
 						{/* Maybe I can do an overflow-x-auto thing kind of like the notion website does when it gets too small HEADS UP, I ADDED IT ABOVE*/}
 					{tabs.map((tab) => (
 						<motion.div
