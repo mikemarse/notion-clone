@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { PiCubeFill, PiCompassLight, PiPaletteFill, PiMegaphoneLight, PiRocketLaunchFill, PiHammerFill } from "react-icons/pi"
-import { motion } from "framer-motion";
 
 const tabs = [
 	{
@@ -48,7 +47,7 @@ const FifthSection = () => {
 		<div className="text-3xl xl:text-5xl font-medium justify-center items-center flex pb-6 pt-20 lg:pt-0">
 			Every team, side-by-side
 		</div>
-		<div className="grid grid-cols-5 md:grid-cols-6 gap-4 xl:gap-6 xl:px-0 mx-auto xl:w-[990px] 2xl:w-[70%] w-4/5">
+		<div className="grid grid-cols-3 md:grid-cols-6 gap-4 xl:gap-6 xl:px-0 mx-auto xl:w-[990px] 2xl:w-[70%] w-4/5">
 			{tabs.map((tab, index) => (
 				<div key={tab.name} className={`${index === 5 && "col-start-3  md:col-start-6"} transition-colors ease-in-out lg:shadow-sm lg:rounded-xl lg:border flex p-1 lg:p-8 cursor-pointer rounded-md ${activeTab.name === tab.name ? "lg:bg-white bg-[#eae7e7] lg:border border-gray-200 items-center justify-center flex p-1" : "lg:bg-[#f6f5f4] bg-white p-1 items-center justify-center hover:bg-[#eae7e7] border-transparent"}`}
 					onClick={() => setActiveTab(tab)}>
